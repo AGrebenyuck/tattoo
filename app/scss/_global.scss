@@ -1,65 +1,83 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-ul[class],
-ol[class] {
-  padding: 0;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-ul[class] {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-a {
-  text-decoration: none;
-}
 
 body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: $default;
+  background-color: $bg;
+  font-size: 17px;
+  line-height: 24px;
+  @extend %jost-400;
 }
 .main{
   flex-grow: 1;
 }
 .container{
+  max-width: 1246px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 
+.decor-left{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background-color: $orange-btn;
+  &::after,
+  &::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 0;
+    transform: translateX(-2.5px);
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+  }
+  &::after{   
+    top: 0px;       
+    border-top: 6px solid $orange-btn;    
+  }
+  &::before{
+    bottom: 0px;
+    border-bottom: 6px solid $orange-btn;
+  }
+}
+.decor-top{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $grey;
+  &::after,
+  &::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;   
+    top: 0;
+    transform: translateY(-2.5px);
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+  }
+  &::after{
+    right: 0;
+    border-right: 6px solid $grey;   
+  }
+  &::before{
+    left: 0;
+    border-left: 6px solid $grey;
+  }
+}
+.decor-top--orange{
+  background-color: $orange-btn;
+  &::after{
+    border-right-color: $orange-btn;
+  }
+  &::before{
+    border-left-color: $orange-btn;
+  }
 }
