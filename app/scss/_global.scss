@@ -18,6 +18,14 @@ body{
   margin: 0 auto;
 }
 
+.title {
+  @extend %forum-400;
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 .decor-left{
   position: absolute;
   top: 0;
@@ -72,6 +80,33 @@ body{
     border-left: 6px solid $grey;
   }
 }
+.decor-bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $grey;
+  &::after,
+  &::before{
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;   
+    bottom: 0;
+    transform: translateY(-2.5px);
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+  }
+  &::after{
+    right: 0;
+    border-right: 6px solid $grey;   
+  }
+  &::before{
+    left: 0;
+    border-left: 6px solid $grey;
+  }
+}
 .decor-top--orange{
   background-color: $orange-btn;
   &::after{
@@ -81,3 +116,48 @@ body{
     border-left-color: $orange-btn;
   }
 }
+
+.category-decor {
+  &__top,
+  &__bottom{
+    position: absolute;
+    right: -11px;
+  }
+  &__top {
+    top: -1px;
+    border-top: 16px solid $orange;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    &::before{
+      content: '';
+      position: absolute;
+      border-top: 16px solid #f5f5f5;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      right: -7px;
+      transform: translateX(0.3px);
+      top: -15px;
+    }
+  }
+  &__bottom {
+    bottom: -1px;
+    border-bottom: 16px solid $orange;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    z-index: -1;
+    &::before{
+      content: '';
+      position: absolute;
+      border-bottom: 16px solid #f5f5f5;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      right: -7px;
+      transform: translateX(0.3px);
+      top: -1px;
+    }
+  }
+  
+  
+}
+
+

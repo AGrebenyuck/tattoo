@@ -37,3 +37,123 @@ $default: #3E424B;
 
 //
 
+
+%btn-orange{
+  padding: 18px 10px 22px;
+  margin: 0 17px;
+  background-color: $orange-btn;
+  border: 2px solid $orange;
+  color: $white;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+  .decor-btn__left,
+  .decor-btn__right{
+    position: absolute;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    &::before{
+      content: '';
+      position: absolute;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      top: -6px;
+    }
+  }
+  .decor-btn__left{
+    left: -17px;
+    border-right: 17px solid $orange;
+    &::before{
+      border-right: 15px solid $orange-btn;        
+      right: -18px;
+      transform: translateY(-0.9px);
+    }
+  }
+  .decor-btn__right{
+    right: -17px;
+    border-left: 17px solid $orange;
+    &::before{
+      border-left: 15px solid $orange-btn;        
+      left: -18px;
+      transform: translateY(-0.9px);
+    }
+  }
+}
+%btn-white{
+  padding: 18px 10px 18px;
+  margin: 0 17px;
+  background-color: #eee;
+  border: 2px solid $orange;
+  color: $orange;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+  .decor-btn__left,
+  .decor-btn__right{
+    position: absolute;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    &::before{
+      content: '';
+      position: absolute;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      top: -6px;
+      transition: all .3s;
+    }
+  }
+  .decor-btn__left{
+    left: -17px;
+    border-right: 17px solid $orange;
+    &::before{
+      border-right: 15px solid #eee;        
+      right: -18px;
+      transform: translateY(-0.9px);
+    }
+  }
+  .decor-btn__right{
+    right: -17px;
+    border-left: 17px solid $orange;
+    &::before{
+      border-left: 15px solid #eee;        
+      left: -18px;
+      transform: translateY(-0.9px);
+    }
+  }
+}
+
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+%link-decor{
+  border-bottom: 1px solid transparent;
+  position: relative;
+  &::after,
+  &::before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: $orange;
+    bottom: 0;
+    transform: translateY(2.5px) rotate(45deg);
+    transition: all .3s;
+  }
+  &::after{
+    right: -2px;
+  }
+  &::before{
+    left: -2px;
+  }
+}
