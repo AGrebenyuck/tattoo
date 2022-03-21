@@ -1,6 +1,20 @@
 
 $(function(){
 
+  $(window).scroll(function() {
+    var height = $(window).scrollTop();
+    
+    if(height > 1500){
+      if($('.scroll-top').length > 0){
+        $('.scroll-top').addClass('scroll-top--active');
+      }
+    } else{
+      if($('.scroll-top').length > 0){
+        $('.scroll-top').removeClass('scroll-top--active');
+      }
+    }
+  });
+
   var testimonial = new Swiper('.testimonial__slider', {
     navigation: {
       nextEl: '.swiper-button-next',

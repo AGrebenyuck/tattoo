@@ -156,8 +156,67 @@ body{
       top: -1px;
     }
   }
-  
-  
 }
+
+.scroll-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f5f5f5;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  transition: all .2s;
+  opacity: 0;
+  pointer-events: none;
+  &:hover{
+    padding: 15px 25px;
+    width: 272px;
+    height: 80px;
+    .scroll-top__icon{
+      transform: translateX(0px);
+    }
+    .scroll-top__text{
+      opacity: 1;
+    }
+  }
+  &--active{
+    opacity: 1;
+    pointer-events: all;
+  }
+  &__text {
+    @extend %montserrat-500;
+    color: $orange;
+    line-height: 26px;
+    transition: all .1s .25s;
+    opacity: 0;
+  }
+  &__icon {
+    transform: translateX(-114px);
+    display: inline-block;
+    min-width: 50px;
+    min-height: 50px;
+    border: 1px solid $orange;
+    position: relative;
+    z-index: 10;
+    background-color: #f5f5f5;
+    &::before{
+      content: '';
+      position: absolute;
+      border-bottom: 10px solid $orange;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
 
 
