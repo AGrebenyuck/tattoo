@@ -218,5 +218,32 @@ body{
   }
 }
 
+.breadcrumbs {
+  padding: 50px 0 30px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {}
+  &__item + .breadcrumbs__item{
+    margin-left: 29px;
+    position: relative;
+    &::before{
+      content: '/';
+      position: absolute;
+      left: -18px;
+      top: 0px;
+      color: $grey;
+    }
+  }
+  &__link {
+    line-height: 26px;
+    color: $grey;
+  }
+  &__link--active{
+    color: #636B78;
+  }
+}
+
 
 

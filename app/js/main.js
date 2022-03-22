@@ -1,18 +1,25 @@
 
 $(function(){
 
-  $(window).scroll(function() {
-    var height = $(window).scrollTop();
-    
-    if(height > 1500){
-      if($('.scroll-top').length > 0){
-        $('.scroll-top').addClass('scroll-top--active');
-      }
-    } else{
-      if($('.scroll-top').length > 0){
-        $('.scroll-top').removeClass('scroll-top--active');
-      }
+
+
+  $('.dropdown').click(function () {
+    $(this).attr('tabindex', 1).focus();
+    $(this).toggleClass('dropdown--active');
+    $(this).find('.dropdown-menu').slideToggle(300);
+  });
+  $('.dropdown').focusout(function () {
+    $(this).removeClass('dropdown--active');
+    $(this).find('.dropdown-menu').slideUp(300);
+  });
+  $('.dropdown-menu__item').click(function (e) {
+    e.stopPropagation();
+    if($(this).hasClass('dropdown-menu__item--all')){
+      $(this).parents('.dropdown-menu').find('.dropdown-menu__input').prop('checked', true);
+      console.log('success');
     }
+    $(this).parents('.dropdown').find('.select__text').text($(this).text());
+    $(this).parents('.dropdown').find('.dropdown__input-hidden').attr('value', $(this).text());
   });
 
   var testimonial = new Swiper('.testimonial__slider', {
@@ -74,6 +81,11 @@ $(function(){
     var id  = $(this).attr('href');
 		$(this).addClass('products__tab-link--active');
 		$(id).addClass('products__content--active');
+  })
+  $('.catalog-page__tab').on('click', function(e){
+    e.preventDefault();
+    $('.catalog-page__tab').removeClass('catalog-page__tab--active');
+		$(this).addClass('catalog-page__tab--active');
   })
 
   var products = new Swiper('.products__slider', {

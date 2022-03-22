@@ -400,6 +400,645 @@
         </ul>
       </div>
     </div>
+    <section class="catalog-page">
+      <div class="container">
+        <h3 class="title catalog-page__title">Тату машинки</h3>
+        <div class="catalog-page__tabs">
+          <a class="catalog-page__tab" href="#">Для начинающих</a>
+          <a class="catalog-page__tab" href="#">От билдеров</a>
+          <a class="catalog-page__tab catalog-page__tab--active" href="#">Для профессионалов</a>
+          <a class="catalog-page__tab" href="#">Расходники</a>
+        </div>
+        <div class="filters">
+          <div class="filters__box">
+            <div class="filter-item">
+              <p class="filter-item__title">Цена</p>
+              <input class="filter-item__input" type="number" value="4500" min="0">
+              <p class="filter-item__line">–</p>
+              <input class="filter-item__input" type="number" value="38000" min="0"> 
+            </div>
+            <div class="filter-item">
+              <p class="filter-item__title">Тип машинки</p>
+              <div class="dropdown">
+                <div class="select">
+                  <span class="select__text">Роторная</span>
+                </div>
+                <input class="dropdown__input-hidden" type="hidden" name="type">
+                <ul class="dropdown-menu">
+                  <li class="dropdown-menu__item dropdown-menu__item--all">
+                    <label class="dropdown-menu__label">
+                      <input class="dropdown-menu__input" type="checkbox">
+                      <div class="dropdown-menu__checkbox">
+                        <span></span>
+                        Выделить все
+                      </div>
+                    </label>
+                  <li class="dropdown-menu__item">
+                    <label class="dropdown-menu__label">
+                      <input class="dropdown-menu__input" type="checkbox">
+                      <div class="dropdown-menu__checkbox">
+                        <span></span>
+                        Роторная
+                      </div>       
+                    </label>
+                  <li class="dropdown-menu__item">
+                    <label class="dropdown-menu__label">
+                      <input class="dropdown-menu__input" type="checkbox">
+                      <div class="dropdown-menu__checkbox">
+                        <span></span>
+                        Индукционная
+                      </div>      
+                    </label>
+                  <li class="dropdown-menu__item">
+                    <label class="dropdown-menu__label">
+                      <input class="dropdown-menu__input" type="checkbox">
+                      <div class="dropdown-menu__checkbox">
+                        <span></span>
+                        Еще один вид
+                      </div>
+                    </label>
+                  <li class="dropdown-menu__item">
+                    <label class="dropdown-menu__label">
+                      <input class="dropdown-menu__input" type="checkbox">
+                      <div class="dropdown-menu__checkbox">
+                        <span></span>
+                        Другой тип машинки
+                      </div>                      
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="filter-item filter-item--availability">
+              <p class="filter-item__title">Только в наличии</p>
+              <label class="filter-item__label">
+                <input class="filter-item__input-checkbox" type="checkbox">
+                <div class="filter-item__checkbox">
+                  <span></span>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="filter-item">
+            <p class="filter-item__title">Сортировка</p>
+            <div class="dropdown">
+              <div class="select">
+                <span class="select__text">Популярные</span>
+              </div>
+              <input class="dropdown__input-hidden" type="hidden" name="type">
+              <ul class="dropdown-menu">
+                <li class="dropdown-menu__item">
+                  <label class="dropdown-menu__label">
+                    <input class="dropdown-menu__input" type="radio" name="radio">
+                    <div class="dropdown-menu__checkbox">
+                      <span></span>
+                      Популярные
+                    </div>
+                  </label>
+                </li>
+                <li class="dropdown-menu__item">
+                  <label class="dropdown-menu__label">
+                    <input class="dropdown-menu__input" type="radio" name="radio">
+                    <div class="dropdown-menu__checkbox">
+                      <span></span>
+                      По алфавиту
+                    </div>
+                  </label>
+                </li>
+                <li class="dropdown-menu__item">
+                  <label class="dropdown-menu__label">
+                    <input class="dropdown-menu__input" type="radio" name="radio">
+                    <div class="dropdown-menu__checkbox">
+                      <span></span>
+                      Дешёвые
+                    </div>
+                  </label>
+                </li>
+                <li class="dropdown-menu__item">
+                  <label class="dropdown-menu__label">
+                    <input class="dropdown-menu__input" type="radio" name="radio">
+                    <div class="dropdown-menu__checkbox">
+                      <span></span>
+                      Дорогие
+                    </div>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-page__items">
+          <div class="catalog-page__item">
+            <div class="product-item">
+              <div class="product-item__img-box">
+                <div class="swiper product-item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-1.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-1.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-1.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <label class="product-item__label">
+                  <input class="product-item__like" type="checkbox">
+                  <span class="product-item__checkbox"></span>
+                </label>
+                <div class="product-item__categories">
+                  <div class="product-item__category product-item__category--hot">
+                    Хит продаж
+                    <div class="category-decor__top"></div>
+                    <div class="category-decor__bottom"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="#">
+                  <p class="product-item__title">
+                    Foxxx Kitsune Mini Black Vintage RCA
+                  </p>
+            
+                </a>
+                <p class="product-item__price">
+                  <span class="product-item__price-current">6 000 ₽</span>
+                </p>
+                <a class="product-item__link" href="#">
+                  Добавить в корзину
+                  <div class="decor-btn__left"></div>
+                  <div class="decor-btn__right"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-page__item">
+            <div class="product-item">
+              <div class="product-item__img-box">
+                <div class="swiper product-item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-2.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-2.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-2.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <label class="product-item__label">
+                  <input class="product-item__like" type="checkbox">
+                  <span class="product-item__checkbox"></span>
+                </label>
+                <div class="product-item__categories">
+                  <div class="product-item__category product-item__category--hot">
+                    Хит продаж
+                    <div class="category-decor__top"></div>
+                    <div class="category-decor__bottom"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="#">
+                  <p class="product-item__title">
+                    Foxxx Viper Fox Golden Vintage Lot #1 RCA
+                  </p>
+            
+                </a>
+                <p class="product-item__price">
+                  <span class="product-item__price-current">8 730 ₽</span>
+                </p>
+                <a class="product-item__link" href="#">
+                  Добавить в корзину
+                  <div class="decor-btn__left"></div>
+                  <div class="decor-btn__right"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-page__item">
+            <div class="product-item">
+              <div class="product-item__img-box">
+                <div class="swiper product-item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-9.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-9.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-9.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <label class="product-item__label">
+                  <input class="product-item__like" type="checkbox">
+                  <span class="product-item__checkbox"></span>
+                </label>
+                <div class="product-item__categories">
+                  <div class="product-item__category product-item__category--hot">
+                    Хит продаж
+                    <div class="category-decor__top"></div>
+                    <div class="category-decor__bottom"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="#">
+                  <p class="product-item__title">
+                    Foxxx Kitsune Mini Vintage Aging With Gold RCA
+                  </p>
+            
+                </a>
+                <p class="product-item__price">
+                  <span class="product-item__price-current">65 305 ₽</span>
+                  <span class="product-item__price-old">70 000</span>
+                </p>
+                <a class="product-item__link" href="#">
+                  Добавить в корзину
+                  <div class="decor-btn__left"></div>
+                  <div class="decor-btn__right"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-page__item">
+            <div class="product-item">
+              <div class="product-item__img-box">
+                <div class="swiper product-item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-10.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-10.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-10.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <label class="product-item__label">
+                  <input class="product-item__like" type="checkbox">
+                  <span class="product-item__checkbox"></span>
+                </label>
+              </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="#">
+                  <p class="product-item__title">
+                    Skinductor Vertigo Long Stroke
+                  </p>
+            
+                </a>
+                <p class="product-item__price">
+                  <span class="product-item__price-current">14 550 ₽</span>
+                </p>
+                <a class="product-item__link" href="#">
+                  Добавить в корзину
+                  <div class="decor-btn__left"></div>
+                  <div class="decor-btn__right"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-page__item">
+            <div class="product-item">
+              <div class="product-item__img-box">
+                <div class="swiper product-item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-11.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-11.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-11.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <label class="product-item__label">
+                  <input class="product-item__like" type="checkbox">
+                  <span class="product-item__checkbox"></span>
+                </label>
+              </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="#">
+                  <p class="product-item__title">
+                    CNC X-WE Wireless Tattoo Pen
+                  </p>
+            
+                </a>
+                <p class="product-item__price">
+                  <span class="product-item__price-current">24 444 ₽</span>
+                </p>
+                <a class="product-item__link" href="#">
+                  Добавить в корзину
+                  <div class="decor-btn__left"></div>
+                  <div class="decor-btn__right"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-page__item">
+            <div class="product-item">
+              <div class="product-item__img-box">
+                <div class="swiper product-item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-12.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-12.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-12.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <label class="product-item__label">
+                  <input class="product-item__like" type="checkbox">
+                  <span class="product-item__checkbox"></span>
+                </label>
+              </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="#">
+                  <p class="product-item__title">
+                    MT Vader Pen MT RCA Cord PRO 2000.135
+                  </p>
+            
+                </a>
+                <p class="product-item__price">
+                  <span class="product-item__price-current">19 400 ₽</span>
+                </p>
+                <a class="product-item__link" href="#">
+                  Добавить в корзину
+                  <div class="decor-btn__left"></div>
+                  <div class="decor-btn__right"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-page__item">
+            <div class="product-item">
+              <div class="product-item__img-box">
+                <div class="swiper product-item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-13.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-13.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-13.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <label class="product-item__label">
+                  <input class="product-item__like" type="checkbox">
+                  <span class="product-item__checkbox"></span>
+                </label>
+              </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="#">
+                  <p class="product-item__title">
+                    Verge Direct 2.1 Black
+                  </p>
+            
+                </a>
+                <p class="product-item__price">
+                  <span class="product-item__price-current">11 000 ₽</span>
+                </p>
+                <a class="product-item__link" href="#">
+                  Добавить в корзину
+                  <div class="decor-btn__left"></div>
+                  <div class="decor-btn__right"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-page__item">
+            <div class="product-item">
+              <div class="product-item__img-box">
+                <div class="swiper product-item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-14.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-14.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-14.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <label class="product-item__label">
+                  <input class="product-item__like" type="checkbox">
+                  <span class="product-item__checkbox"></span>
+                </label>
+              </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="#">
+                  <p class="product-item__title">
+                    Verge Direct 2 Black RCA
+                  </p>
+            
+                </a>
+                <p class="product-item__price">
+                  <span class="product-item__price-current">10 900 ₽</span>
+                </p>
+                <a class="product-item__link" href="#">
+                  Добавить в корзину
+                  <div class="decor-btn__left"></div>
+                  <div class="decor-btn__right"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-page__item">
+            <div class="product-item">
+              <div class="product-item__img-box">
+                <div class="swiper product-item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-5.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-5.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-5.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <label class="product-item__label">
+                  <input class="product-item__like" type="checkbox">
+                  <span class="product-item__checkbox"></span>
+                </label>
+              </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="#">
+                  <p class="product-item__title">
+                    Foxxx Kitsune Mini Black Vintage RCA
+                  </p>
+            
+                </a>
+                <p class="product-item__price">
+                  <span class="product-item__price-current">6 000 ₽</span>
+                </p>
+                <a class="product-item__link" href="#">
+                  Добавить в корзину
+                  <div class="decor-btn__left"></div>
+                  <div class="decor-btn__right"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-page__item">
+            <div class="product-item">
+              <div class="product-item__img-box">
+                <div class="swiper product-item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-6.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-6.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-6.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <label class="product-item__label">
+                  <input class="product-item__like" type="checkbox">
+                  <span class="product-item__checkbox"></span>
+                </label>
+              </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="#">
+                  <p class="product-item__title">
+                    Foxxx Kitsune Mini Black Vintage RCA
+                  </p>
+            
+                </a>
+                <p class="product-item__price">
+                  <span class="product-item__price-current">6 000 ₽</span>
+                </p>
+                <a class="product-item__link" href="#">
+                  Добавить в корзину
+                  <div class="decor-btn__left"></div>
+                  <div class="decor-btn__right"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-page__item">
+            <div class="product-item">
+              <div class="product-item__img-box">
+                <div class="swiper product-item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-7.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-7.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-7.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <label class="product-item__label">
+                  <input class="product-item__like" type="checkbox">
+                  <span class="product-item__checkbox"></span>
+                </label>
+              </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="#">
+                  <p class="product-item__title">
+                    Foxxx Kitsune Mini Black Vintage RCA
+                  </p>
+            
+                </a>
+                <p class="product-item__price">
+                  <span class="product-item__price-current">6 000 ₽</span>
+                </p>
+                <a class="product-item__link" href="#">
+                  Добавить в корзину
+                  <div class="decor-btn__left"></div>
+                  <div class="decor-btn__right"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog-page__item">
+            <div class="product-item">
+              <div class="product-item__img-box">
+                <div class="swiper product-item__slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-8.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-8.jpg" alt="product">
+                    </div>
+                    <div class="swiper-slide product-item__slide">
+                      <img class="product-item__slide-img" src="images/products/product-8.jpg" alt="product">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <label class="product-item__label">
+                  <input class="product-item__like" type="checkbox">
+                  <span class="product-item__checkbox"></span>
+                </label>
+              </div>
+              <div class="product-item__content">
+                <a class="product-item__title-link" href="#">
+                  <p class="product-item__title">
+                    Foxxx Kitsune Mini Black Vintage RCA
+                  </p>
+            
+                </a>
+                <p class="product-item__price">
+                  <span class="product-item__price-current">6 000 ₽</span>
+                </p>
+                <a class="product-item__link" href="#">
+                  Добавить в корзину
+                  <div class="decor-btn__left"></div>
+                  <div class="decor-btn__right"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+     
+        </div>
+        <a class="catalog-page__link" href="#">
+          Показать ещё
+          <div class="decor-btn__left"></div>
+          <div class="decor-btn__right"></div>
+        </a>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
