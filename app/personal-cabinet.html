@@ -397,655 +397,557 @@
             <a class="breadcrumbs__link" href="#">Главная</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Каталог</a>
-          </li>
-          <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Тату машинки</a>
+            <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Личный кабинет</a>
           </li>
         </ul>
       </div>
     </div>
-    <section class="catalog-page">
+    <section class="personal-cabinet">
       <div class="container">
-        <h3 class="title catalog-page__title">Тату машинки</h3>
-        <div class="catalog-page__tabs">
-          <a class="catalog-page__tab" href="#">Для начинающих</a>
-          <a class="catalog-page__tab" href="#">От билдеров</a>
-          <a class="catalog-page__tab catalog-page__tab--active" href="#">Для профессионалов</a>
-          <a class="catalog-page__tab" href="#">Расходники</a>
-        </div>
-        <div class="filters">
-          <a class="filters__btn" href=".filters__box">Фильтр</a>
-          <div class="filters__box">
-            <p class="filters__box-text">Фильтр</p>
-            <div class="filter-item">
-              <p class="filter-item__title">Цена</p>
-              <div class="filter-item__inputs">
-                <input class="filter-item__input" type="number" value="4500" min="0">
-                <p class="filter-item__line">–</p>
-                <input class="filter-item__input" type="number" value="38000" min="0"> 
+        <div class="personal-cabinet__inner">
+          <div class="personal-cabinet__body">
+            <h3 class="title personal-cabinet__title">Личный кабинет</h3>
+            <form class="cart-info__form">    
+              <div class="cart-info__form-box">
+                <h4 class="cart-info__form-title">
+                01. Информация о получателе
+              </h4>
+              <a class="cart-info__form-edit" href="#">
+                Редактировать
+                <div class="decor-bottomQ"></div>
+              </a>
+              </div>              
+              <div class="cart-info__form-inputs">
+                <label class="cart-info__form-label cart-info__form-input--name">
+                  ФИО*
+                  <input class="cart-info__form-input" type="text" placeholder="Иванов Иван Иванович" required>
+                </label>
+                <label class="cart-info__form-label cart-info__form-input--tel">
+                  Телефон*
+                  <input class="cart-info__form-input" type="tel" placeholder="8(800)555-35-35" required>
+                </label>
+                <label class="cart-info__form-label cart-info__form-input--mail">
+                  Эл. почта
+                  <input class="cart-info__form-input" type="email" placeholder="Ivanov2021@mail.ru">
+                </label>
               </div>
-              <div class="decor-bottom"></div>
-            </div>
-            <div class="filter-item">
-              <p class="filter-item__title">Тип машинки</p>
-              <div class="dropdown">
-                <div class="select">
-                  <span class="select__text">Роторная</span>
+            </form>
+            <form class="cart-info__form personal-cabinet__form">
+              <div class="cart-info__form-box">
+                <h4 class="cart-info__form-title">
+                  02. Адрес доставки
+                </h4>
+                <a class="cart-info__form-edit" href="#">
+                  Редактировать
+                  <div class="decor-bottomQ"></div>
+                </a>
+              </div>
+              <div class="cart-info__form-inputs">
+                <label class="cart-info__form-label cart-info__form-input--city">
+                  Город*
+                  <input class="cart-info__form-input" type="text" placeholder="Москва" required>
+                </label>
+                <label class="cart-info__form-label cart-info__form-input--street">
+                  Улица, дом*
+                  <input class="cart-info__form-input" type="text" placeholder="ул. Ленина д. 25" required>
+                </label>
+              </div>
+              <div class="cart-info__form-inputs cart-info__form-inputs--thumb">
+                <label class="cart-info__form-label cart-info__form-input--home">
+                  Квартира / офис*
+                  <input class="cart-info__form-input" type="text" placeholder="589" required>
+                </label>
+                <label class="cart-info__form-label cart-info__form-input--entrance">
+                  Подъезд
+                  <input class="cart-info__form-input" type="text" placeholder="5">
+                </label>
+                <label class="cart-info__form-label cart-info__form-input--floor">
+                  Этаж
+                  <input class="cart-info__form-input" type="text" placeholder="5">
+                </label>
+                <label class="cart-info__form-label cart-info__form-input--intercom">
+                  Домофон
+                  <input class="cart-info__form-input" type="text" placeholder="7350">
+                </label>
+              </div>
+            </form>
+            <div class="personal-cabinet__order">
+              <h5 class="personal-cabinet__order-title">
+                История заказов
+              </h5>
+              <div class="personal-cabinet__item">
+                <div class="personal-cabinet__item-top">
+                  <div class="personal-cabinet__item-box">
+                    <p class="personal-cabinet__item-text">Дата:</p>
+                    <p class="personal-cabinet__item-subtext">10.05.2021</p>
+                  </div>
+                  <div class="personal-cabinet__item-box">
+                    <p class="personal-cabinet__item-text">Номер заказа:</p>
+                    <p class="personal-cabinet__item-subtext">58145</p>
+                  </div>
+                  <div class="personal-cabinet__item-box">
+                    <p class="personal-cabinet__item-text">Кол-во товаров:</p>
+                    <p class="personal-cabinet__item-subtext">25</p>
+                  </div>
+                  <div class="personal-cabinet__item-box">
+                    <p class="personal-cabinet__item-text">На сумму:</p>
+                    <p class="personal-cabinet__item-subtext">58 180 ₽</p>
+                  </div>
+                  <div class="personal-cabinet__item-box">
+                    <p class="personal-cabinet__item-text">Статус:</p>
+                    <p class="personal-cabinet__item-subtext">Доставка</p>
+                  </div>
+                  <div class="personal-cabinet__item-box">
+                    <a class="personal-cabinet__item-link" href="#">
+                      <div class="personal-cabinet__item-linktext">
+                        Подробнее о заказе
+                        <div class="decor-bottomQ"></div>
+                      </div> 
+                      <span></span>
+                    </a>                    
+                  </div>
                 </div>
-                <input class="dropdown__input-hidden" type="hidden" name="type">
-                <ul class="dropdown-menu">
-                  <li class="dropdown-menu__item dropdown-menu__item--all">
-                    <label class="dropdown-menu__label">
-                      <input class="dropdown-menu__input" type="checkbox">
-                      <div class="dropdown-menu__checkbox">
-                        <span></span>
-                        Выделить все
+                <div class="personal-cabinet__item-body">
+                  <div class="personal-cabinet__item-info">
+                    <div class="decor-top"></div>
+                    <div class="personal-cabinet__item-wrapper">
+                      <h5 class="personal-cabinet__order-title">
+                        Информация о заказе
+                      </h5>
+                      <div class="personal-cabinet__item-box">
+                        <p class="personal-cabinet__item-text">
+                          Номер заказа:
+                        </p>
+                        <p class="personal-cabinet__item-subtext">
+                          58145 от 02.10.2021, 20:56:40
+                        </p>
                       </div>
-                    </label>
-                  <li class="dropdown-menu__item">
-                    <label class="dropdown-menu__label">
-                      <input class="dropdown-menu__input" type="checkbox">
-                      <div class="dropdown-menu__checkbox">
-                        <span></span>
-                        Роторная
-                      </div>       
-                    </label>
-                  <li class="dropdown-menu__item">
-                    <label class="dropdown-menu__label">
-                      <input class="dropdown-menu__input" type="checkbox">
-                      <div class="dropdown-menu__checkbox">
-                        <span></span>
-                        Индукционная
-                      </div>      
-                    </label>
-                  <li class="dropdown-menu__item">
-                    <label class="dropdown-menu__label">
-                      <input class="dropdown-menu__input" type="checkbox">
-                      <div class="dropdown-menu__checkbox">
-                        <span></span>
-                        Еще один вид
+                      <div class="personal-cabinet__item-box">
+                        <p class="personal-cabinet__item-text">
+                          Адрес:
+                        </p>
+                        <p class="personal-cabinet__item-subtext">
+                          Г. Москва, ул. Ленина, д. 50, кв. 50
+                        </p>
                       </div>
-                    </label>
-                  <li class="dropdown-menu__item">
-                    <label class="dropdown-menu__label">
-                      <input class="dropdown-menu__input" type="checkbox">
-                      <div class="dropdown-menu__checkbox">
-                        <span></span>
-                        Другой тип машинки
-                      </div>                      
-                    </label>
-                  </li>
-                </ul>
-              </div>
-              <div class="decor-bottom"></div>
-            </div>
-            <div class="filter-item filter-item--availability">
-              <p class="filter-item__title">Только в наличии</p>
-              <label class="filter-item__label">
-                <input class="filter-item__input-checkbox" type="checkbox">
-                <div class="filter-item__checkbox">
-                  <span></span>
+                      <div class="personal-cabinet__item-box">
+                        <p class="personal-cabinet__item-text">
+                          Сумма заказа:
+                        </p>
+                        <p class="personal-cabinet__item-subtext">
+                          37 820 ₽
+                        </p>
+                      </div>
+                    </div>
+                    <div class="personal-cabinet__item-wrapper">
+                      <h5 class="personal-cabinet__order-title">Контактное лицо</h5>
+                      <div class="personal-cabinet__item-box">
+                        <p class="personal-cabinet__item-text">ФИО</p>
+                        <p class="personal-cabinet__item-subtext">
+                          Иванов Иван Иванович
+                        </p>
+                      </div>
+                      <div class="personal-cabinet__item-box">
+                        <p class="personal-cabinet__item-text">
+                          Телефон
+                        </p>
+                        <p class="personal-cabinet__item-subtext">
+                          8 800 555-35-35
+                        </p>
+                      </div>
+                      <div class="personal-cabinet__item-box">
+                        <p class="personal-cabinet__item-text">
+                          Эл. почта
+                        </p>
+                        <p class="personal-cabinet__item-subtext">
+                          Ivanov2021@mail.ru
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="personal-cabinet__item-content">
+                    <div class="decor-top"></div>
+                    <h5 class="personal-cabinet__order-title">
+                      Содержимое заказа
+                    </h5>
+                    <div class="cart-info__items personal-cabinet__items">
+                      <div class="cart-info__info-item cart-info__info-item--top">
+                        <div class="cart-info__item-name">
+                          <p class="cart-info__item-toptext">Наименование</p>
+                        </div>
+                        <div class="cart-info__item-price">
+                          <p class="cart-info__item-toptext">Цена</p>
+                        </div>
+                        <div class="cart-info__item-num">
+                          <p class="cart-info__item-toptext">Количество</p>
+                        </div>
+                        <div class="cart-info__item-cost">
+                          <p class="cart-info__item-toptext">Стоимость</p>
+                        </div>
+                        <div class="decor-bottom"></div>
+                      </div>
+                      <div class="cart-info__info-item">
+                        <div class="decor-top"></div>
+                        <div class="cart-info__item-name">
+                          <div class="cart-info__item-box">
+                            <img class="cart-info__item-img" src="images/products/cart-thumb-1.jpg" alt="product">
+                            <div class="cart-info__item-content">
+                              <p class="cart-info__item-text">
+                                Foxxx Viper Fox Golden Vintage Lot #1 RCA
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-info__item-price">
+                          <p class="cart-info__item-text">9000₽</p>
+                        </div>
+                        <div class="cart-info__item-num">
+                          <p class="cart-info__item-text">4</p>
+                        </div>
+                        <div class="cart-info__item-cost">
+                          <p class="cart-info__item-text">34 920₽</p>
+                        </div>
+                      </div>
+                      <div class="cart-info__info-item">
+                        <div class="decor-top"></div>
+                        <div class="cart-info__item-name">
+                          <div class="cart-info__item-box">
+                            <img class="cart-info__item-img" src="images/products/cart-thumb-2.jpg" alt="product">
+                            <div class="cart-info__item-content">
+                              <p class="cart-info__item-text">
+                                Перчатки Нитровиниловые
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-info__item-price">
+                          <p class="cart-info__item-text">20₽</p>
+                        </div>
+                        <div class="cart-info__item-num">
+                          <p class="cart-info__item-text">10</p>
+                        </div>
+                        <div class="cart-info__item-cost">
+                          <p class="cart-info__item-text">200₽</p>
+                        </div>
+                      </div>
+                      <div class="cart-info__info-item">
+                        <div class="decor-top"></div>
+                        <div class="cart-info__item-name">
+                          <div class="cart-info__item-box">
+                            <img class="cart-info__item-img" src="images/products/cart-thumb-3.jpg" alt="product">
+                            <div class="cart-info__item-content">
+                              <p class="cart-info__item-text">
+                                КРАСКА Tattoo Ink Малевич Черный 50 мл
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-info__item-price">
+                          <p class="cart-info__item-text">650₽</p>
+                        </div>
+                        <div class="cart-info__item-num">
+                          <p class="cart-info__item-text">2</p>
+                        </div>
+                        <div class="cart-info__item-cost">
+                          <p class="cart-info__item-text">1300₽</p>
+                        </div>
+                      </div>
+                      <div class="cart-info__info-item">
+                        <div class="decor-top"></div>
+                        <div class="cart-info__item-name">
+                          <div class="cart-info__item-box">
+                            <img class="cart-info__item-img" src="images/products/cart-thumb-4.jpg" alt="product">
+                            <div class="cart-info__item-content">
+                              <p class="cart-info__item-text">
+                                Verge Grip 35 мм
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-info__item-price">
+                          <p class="cart-info__item-text">1400₽</p>
+                        </div>
+                        <div class="cart-info__item-num">
+                          <p class="cart-info__item-text">1</p>
+                        </div>
+                        <div class="cart-info__item-cost">
+                          <p class="cart-info__item-text">1400₽</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="personal-cabinet__item-box personal-cabinet__item-box--bottom">
+                      <div class="decor-top"></div>
+                      <a class="personal-cabinet__item-link" href="#">
+                        <div class="personal-cabinet__item-linktext">
+                          Скрыть информацию
+                          <div class="decor-bottomQ"></div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </label>
-              <div class="decor-bottom"></div>
+              </div>
+              <div class="personal-cabinet__item">
+                <div class="personal-cabinet__item-top">
+                  <div class="personal-cabinet__item-box">
+                    <p class="personal-cabinet__item-text">Дата:</p>
+                    <p class="personal-cabinet__item-subtext">10.05.2021</p>
+                  </div>
+                  <div class="personal-cabinet__item-box">
+                    <p class="personal-cabinet__item-text">Номер заказа:</p>
+                    <p class="personal-cabinet__item-subtext">58145</p>
+                  </div>
+                  <div class="personal-cabinet__item-box">
+                    <p class="personal-cabinet__item-text">Кол-во товаров:</p>
+                    <p class="personal-cabinet__item-subtext">25</p>
+                  </div>
+                  <div class="personal-cabinet__item-box">
+                    <p class="personal-cabinet__item-text">На сумму:</p>
+                    <p class="personal-cabinet__item-subtext">58 180 ₽</p>
+                  </div>
+                  <div class="personal-cabinet__item-box">
+                    <p class="personal-cabinet__item-text">Статус:</p>
+                    <p class="personal-cabinet__item-subtext">Доставка</p>
+                  </div>
+                  <div class="personal-cabinet__item-box">
+                    <a class="personal-cabinet__item-link" href="#">
+                      <div class="personal-cabinet__item-linktext">
+                        Подробнее о заказе
+                        <div class="decor-bottomQ"></div>
+                      </div> 
+                      <span></span>
+                    </a>
+                  </div>
+                </div>
+                <div class="personal-cabinet__item-body">
+                  <div class="personal-cabinet__item-info">
+                    <div class="decor-top"></div>
+                    <div class="personal-cabinet__item-wrapper">
+                      <h5 class="personal-cabinet__order-title">
+                        Информация о заказе
+                      </h5>
+                      <div class="personal-cabinet__item-box">
+                        <p class="personal-cabinet__item-text">
+                          Номер заказа:
+                        </p>
+                        <p class="personal-cabinet__item-subtext">
+                          58145 от 02.10.2021, 20:56:40
+                        </p>
+                      </div>
+                      <div class="personal-cabinet__item-box">
+                        <p class="personal-cabinet__item-text">
+                          Адрес:
+                        </p>
+                        <p class="personal-cabinet__item-subtext">
+                          Г. Москва, ул. Ленина, д. 50, кв. 50
+                        </p>
+                      </div>
+                      <div class="personal-cabinet__item-box">
+                        <p class="personal-cabinet__item-text">
+                          Сумма заказа:
+                        </p>
+                        <p class="personal-cabinet__item-subtext">
+                          37 820 ₽
+                        </p>
+                      </div>
+                    </div>
+                    <div class="personal-cabinet__item-wrapper">
+                      <h5 class="personal-cabinet__order-title">Контактное лицо</h5>
+                      <div class="personal-cabinet__item-box">
+                        <p class="personal-cabinet__item-text">ФИО</p>
+                        <p class="personal-cabinet__item-subtext">
+                          Иванов Иван Иванович
+                        </p>
+                      </div>
+                      <div class="personal-cabinet__item-box">
+                        <p class="personal-cabinet__item-text">
+                          Телефон
+                        </p>
+                        <p class="personal-cabinet__item-subtext">
+                          8 800 555-35-35
+                        </p>
+                      </div>
+                      <div class="personal-cabinet__item-box">
+                        <p class="personal-cabinet__item-text">
+                          Эл. почта
+                        </p>
+                        <p class="personal-cabinet__item-subtext">
+                          Ivanov2021@mail.ru
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="personal-cabinet__item-content">
+                    <div class="decor-top"></div>
+                    <h5 class="personal-cabinet__order-title">
+                      Содержимое заказа
+                    </h5>
+                    <div class="cart-info__items personal-cabinet__items">
+                      <div class="cart-info__info-item cart-info__info-item--top">
+                        <div class="cart-info__item-name">
+                          <p class="cart-info__item-toptext">Наименование</p>
+                        </div>
+                        <div class="cart-info__item-price">
+                          <p class="cart-info__item-toptext">Цена</p>
+                        </div>
+                        <div class="cart-info__item-num">
+                          <p class="cart-info__item-toptext">Количество</p>
+                        </div>
+                        <div class="cart-info__item-cost">
+                          <p class="cart-info__item-toptext">Стоимость</p>
+                        </div>
+                        <div class="decor-bottom"></div>
+                      </div>
+                      <div class="cart-info__info-item">
+                        <div class="decor-top"></div>
+                        <div class="cart-info__item-name">
+                          <div class="cart-info__item-box">
+                            <img class="cart-info__item-img" src="images/products/cart-thumb-1.jpg" alt="product">
+                            <div class="cart-info__item-content">
+                              <p class="cart-info__item-text">
+                                Foxxx Viper Fox Golden Vintage Lot #1 RCA
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-info__item-price">
+                          <p class="cart-info__item-text">9000₽</p>
+                        </div>
+                        <div class="cart-info__item-num">
+                          <p class="cart-info__item-text">4</p>
+                        </div>
+                        <div class="cart-info__item-cost">
+                          <p class="cart-info__item-text">34 920₽</p>
+                        </div>
+                      </div>
+                      <div class="cart-info__info-item">
+                        <div class="decor-top"></div>
+                        <div class="cart-info__item-name">
+                          <div class="cart-info__item-box">
+                            <img class="cart-info__item-img" src="images/products/cart-thumb-2.jpg" alt="product">
+                            <div class="cart-info__item-content">
+                              <p class="cart-info__item-text">
+                                Перчатки Нитровиниловые
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-info__item-price">
+                          <p class="cart-info__item-text">20₽</p>
+                        </div>
+                        <div class="cart-info__item-num">
+                          <p class="cart-info__item-text">10</p>
+                        </div>
+                        <div class="cart-info__item-cost">
+                          <p class="cart-info__item-text">200₽</p>
+                        </div>
+                      </div>
+                      <div class="cart-info__info-item">
+                        <div class="decor-top"></div>
+                        <div class="cart-info__item-name">
+                          <div class="cart-info__item-box">
+                            <img class="cart-info__item-img" src="images/products/cart-thumb-3.jpg" alt="product">
+                            <div class="cart-info__item-content">
+                              <p class="cart-info__item-text">
+                                КРАСКА Tattoo Ink Малевич Черный 50 мл
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-info__item-price">
+                          <p class="cart-info__item-text">650₽</p>
+                        </div>
+                        <div class="cart-info__item-num">
+                          <p class="cart-info__item-text">2</p>
+                        </div>
+                        <div class="cart-info__item-cost">
+                          <p class="cart-info__item-text">1300₽</p>
+                        </div>
+                      </div>
+                      <div class="cart-info__info-item">
+                        <div class="decor-top"></div>
+                        <div class="cart-info__item-name">
+                          <div class="cart-info__item-box">
+                            <img class="cart-info__item-img" src="images/products/cart-thumb-4.jpg" alt="product">
+                            <div class="cart-info__item-content">
+                              <p class="cart-info__item-text">
+                                Verge Grip 35 мм
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart-info__item-price">
+                          <p class="cart-info__item-text">1400₽</p>
+                        </div>
+                        <div class="cart-info__item-num">
+                          <p class="cart-info__item-text">1</p>
+                        </div>
+                        <div class="cart-info__item-cost">
+                          <p class="cart-info__item-text">1400₽</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="personal-cabinet__item-box personal-cabinet__item-box--bottom">
+                      <div class="decor-top"></div>
+                      <a class="personal-cabinet__item-link" href="#">
+                        <div class="personal-cabinet__item-linktext">
+                          Скрыть информацию
+                          <div class="decor-bottomQ"></div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div data-da=".filters__box, 650, 2 " class="filter-item">
-            <p class="filter-item__title">Сортировка</p>
-            <div class="dropdown">
-              <div class="select">
-                <span class="select__text">Популярные</span>
+          <div class="assistant mfp-hide">
+            <p class="personal-cabinet__discount">Ваша Персональная скидка: <span>15%</span></p>
+            <div class="assistant__img-box">
+              <img class="assistant__img" src="images/assistants/1.jpg" alt="assistant">
+              <div class="assistant__content">
+                <p class="assistant__text">Ваш менеджер:</p>
+                <p class="assistant__subtext">Валерия</p>
+                <p class="assistant__online assistant__online--offline">Не в сети</p>              
               </div>
-              <input class="dropdown__input-hidden" type="hidden" name="type">
-              <ul class="dropdown-menu">
-                <li class="dropdown-menu__item">
-                  <label class="dropdown-menu__label">
-                    <input class="dropdown-menu__input-radio" type="radio" name="radio" checked>
-                    <div class="dropdown-menu__radio">
-                      <span></span>
-                      Популярные
-                    </div>
-                  </label>
-                </li>
-                <li class="dropdown-menu__item">
-                  <label class="dropdown-menu__label">
-                    <input class="dropdown-menu__input-radio" type="radio" name="radio">
-                    <div class="dropdown-menu__radio">
-                      <span></span>
-                      По алфавиту
-                    </div>
-                  </label>
-                </li>
-                <li class="dropdown-menu__item">
-                  <label class="dropdown-menu__label">
-                    <input class="dropdown-menu__input-radio" type="radio" name="radio">
-                    <div class="dropdown-menu__radio">
-                      <span></span>
-                      Дешёвые
-                    </div>
-                  </label>
-                </li>
-                <li class="dropdown-menu__item">
-                  <label class="dropdown-menu__label">
-                    <input class="dropdown-menu__input-radio" type="radio" name="radio">
-                    <div class="dropdown-menu__radio">
-                      <span></span>
-                      Дорогие
-                    </div>
-                  </label>
-                </li>
-              </ul>
             </div>
-            <div class="decor-bottom"></div>
+            <div class="assistant__social">
+              <div class="assistant__social-item">
+                <a class="assistant__social-link assistant__social-link--bold assistant__social-link--phone" href="#">8(909)816-23-00</a>
+                <p class="assistant__social-sublink">
+                  <span>Viber</span>
+                  <span>Whats App</span>
+                  <span>Telegram</span>
+                </p>
+              </div>
+              <div class="assistant__social-item">
+                <a class="assistant__social-link assistant__social-link--phone" href="#">8(800)600-61-91</a>
+                <p class="assistant__social-sublink">
+                  (Звонок бесплатный)
+                </p>
+              </div>
+              <div class="assistant__social-item">
+                <a class="assistant__social-link assistant__social-link--mail" href="#">Mr.Driskell@mail.ru</a>
+              </div>
+              <div class="assistant__social-item">
+                <p class="assistant__social-text">
+                  Понедельник — Пятница
+                  с 7:00 до 15: 00 (МСК)
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="catalog-page__items">
-          <div class="catalog-page__item">
-            <div class="product-item">
-              <div class="product-item__img-box">
-                <div class="swiper product-item__slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-1.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-1.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-1.jpg" alt="product">
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <label class="product-item__label">
-                  <input class="product-item__like" type="checkbox">
-                  <span class="product-item__checkbox"></span>
-                </label>
-                <div class="product-item__categories">
-                  <div class="product-item__category product-item__category--hot">
-                    Хит продаж
-                  </div>
-                </div>
-              </div>
-              <div class="product-item__content">
-                <a class="product-item__title-link" href="#">
-                  <p class="product-item__title">
-                    Foxxx Kitsune Mini Black Vintage RCA
-                  </p>
-            
-                </a>
-                <p class="product-item__price">
-                  <span class="product-item__price-current">6 000 ₽</span>
-                </p>
-                <a class="product-item__link" href="#">
-                  Добавить в корзину
-                  <div class="decor-btn__left"></div>
-                  <div class="decor-btn__right"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="catalog-page__item">
-            <div class="product-item">
-              <div class="product-item__img-box">
-                <div class="swiper product-item__slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-2.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-2.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-2.jpg" alt="product">
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <label class="product-item__label">
-                  <input class="product-item__like" type="checkbox">
-                  <span class="product-item__checkbox"></span>
-                </label>
-                <div class="product-item__categories">
-                  <div class="product-item__category product-item__category--hot">
-                    Хит продаж
-                  </div>
-                </div>
-              </div>
-              <div class="product-item__content">
-                <a class="product-item__title-link" href="#">
-                  <p class="product-item__title">
-                    Foxxx Viper Fox Golden Vintage Lot #1 RCA
-                  </p>
-            
-                </a>
-                <p class="product-item__price">
-                  <span class="product-item__price-current">8 730 ₽</span>
-                </p>
-                <a class="product-item__link" href="#">
-                  Добавить в корзину
-                  <div class="decor-btn__left"></div>
-                  <div class="decor-btn__right"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="catalog-page__item">
-            <div class="product-item">
-              <div class="product-item__img-box">
-                <div class="swiper product-item__slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-9.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-9.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-9.jpg" alt="product">
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <label class="product-item__label">
-                  <input class="product-item__like" type="checkbox">
-                  <span class="product-item__checkbox"></span>
-                </label>
-                <div class="product-item__categories">
-                  <div class="product-item__category product-item__category--hot">
-                    Хит продаж
-                  </div>
-                </div>
-              </div>
-              <div class="product-item__content">
-                <a class="product-item__title-link" href="#">
-                  <p class="product-item__title">
-                    Foxxx Kitsune Mini Vintage Aging With Gold RCA
-                  </p>
-            
-                </a>
-                <p class="product-item__price">
-                  <span class="product-item__price-current">65 305 ₽</span>
-                  <span class="product-item__price-old">70 000</span>
-                </p>
-                <a class="product-item__link" href="#">
-                  Добавить в корзину
-                  <div class="decor-btn__left"></div>
-                  <div class="decor-btn__right"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="catalog-page__item">
-            <div class="product-item">
-              <div class="product-item__img-box">
-                <div class="swiper product-item__slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-10.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-10.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-10.jpg" alt="product">
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <label class="product-item__label">
-                  <input class="product-item__like" type="checkbox">
-                  <span class="product-item__checkbox"></span>
-                </label>
-              </div>
-              <div class="product-item__content">
-                <a class="product-item__title-link" href="#">
-                  <p class="product-item__title">
-                    Skinductor Vertigo Long Stroke
-                  </p>
-            
-                </a>
-                <p class="product-item__price">
-                  <span class="product-item__price-current">14 550 ₽</span>
-                </p>
-                <a class="product-item__link" href="#">
-                  Добавить в корзину
-                  <div class="decor-btn__left"></div>
-                  <div class="decor-btn__right"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="catalog-page__item">
-            <div class="product-item">
-              <div class="product-item__img-box">
-                <div class="swiper product-item__slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-11.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-11.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-11.jpg" alt="product">
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <label class="product-item__label">
-                  <input class="product-item__like" type="checkbox">
-                  <span class="product-item__checkbox"></span>
-                </label>
-              </div>
-              <div class="product-item__content">
-                <a class="product-item__title-link" href="#">
-                  <p class="product-item__title">
-                    CNC X-WE Wireless Tattoo Pen
-                  </p>
-            
-                </a>
-                <p class="product-item__price">
-                  <span class="product-item__price-current">24 444 ₽</span>
-                </p>
-                <a class="product-item__link" href="#">
-                  Добавить в корзину
-                  <div class="decor-btn__left"></div>
-                  <div class="decor-btn__right"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="catalog-page__item">
-            <div class="product-item">
-              <div class="product-item__img-box">
-                <div class="swiper product-item__slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-12.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-12.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-12.jpg" alt="product">
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <label class="product-item__label">
-                  <input class="product-item__like" type="checkbox">
-                  <span class="product-item__checkbox"></span>
-                </label>
-              </div>
-              <div class="product-item__content">
-                <a class="product-item__title-link" href="#">
-                  <p class="product-item__title">
-                    MT Vader Pen MT RCA Cord PRO 2000.135
-                  </p>
-            
-                </a>
-                <p class="product-item__price">
-                  <span class="product-item__price-current">19 400 ₽</span>
-                </p>
-                <a class="product-item__link" href="#">
-                  Добавить в корзину
-                  <div class="decor-btn__left"></div>
-                  <div class="decor-btn__right"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="catalog-page__item">
-            <div class="product-item">
-              <div class="product-item__img-box">
-                <div class="swiper product-item__slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-13.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-13.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-13.jpg" alt="product">
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <label class="product-item__label">
-                  <input class="product-item__like" type="checkbox">
-                  <span class="product-item__checkbox"></span>
-                </label>
-              </div>
-              <div class="product-item__content">
-                <a class="product-item__title-link" href="#">
-                  <p class="product-item__title">
-                    Verge Direct 2.1 Black
-                  </p>
-            
-                </a>
-                <p class="product-item__price">
-                  <span class="product-item__price-current">11 000 ₽</span>
-                </p>
-                <a class="product-item__link" href="#">
-                  Добавить в корзину
-                  <div class="decor-btn__left"></div>
-                  <div class="decor-btn__right"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="catalog-page__item">
-            <div class="product-item">
-              <div class="product-item__img-box">
-                <div class="swiper product-item__slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-14.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-14.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-14.jpg" alt="product">
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <label class="product-item__label">
-                  <input class="product-item__like" type="checkbox">
-                  <span class="product-item__checkbox"></span>
-                </label>
-              </div>
-              <div class="product-item__content">
-                <a class="product-item__title-link" href="#">
-                  <p class="product-item__title">
-                    Verge Direct 2 Black RCA
-                  </p>
-            
-                </a>
-                <p class="product-item__price">
-                  <span class="product-item__price-current">10 900 ₽</span>
-                </p>
-                <a class="product-item__link" href="#">
-                  Добавить в корзину
-                  <div class="decor-btn__left"></div>
-                  <div class="decor-btn__right"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="catalog-page__item">
-            <div class="product-item">
-              <div class="product-item__img-box">
-                <div class="swiper product-item__slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-5.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-5.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-5.jpg" alt="product">
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <label class="product-item__label">
-                  <input class="product-item__like" type="checkbox">
-                  <span class="product-item__checkbox"></span>
-                </label>
-              </div>
-              <div class="product-item__content">
-                <a class="product-item__title-link" href="#">
-                  <p class="product-item__title">
-                    Foxxx Kitsune Mini Black Vintage RCA
-                  </p>
-            
-                </a>
-                <p class="product-item__price">
-                  <span class="product-item__price-current">6 000 ₽</span>
-                </p>
-                <a class="product-item__link" href="#">
-                  Добавить в корзину
-                  <div class="decor-btn__left"></div>
-                  <div class="decor-btn__right"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="catalog-page__item">
-            <div class="product-item">
-              <div class="product-item__img-box">
-                <div class="swiper product-item__slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-6.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-6.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-6.jpg" alt="product">
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <label class="product-item__label">
-                  <input class="product-item__like" type="checkbox">
-                  <span class="product-item__checkbox"></span>
-                </label>
-              </div>
-              <div class="product-item__content">
-                <a class="product-item__title-link" href="#">
-                  <p class="product-item__title">
-                    Foxxx Kitsune Mini Black Vintage RCA
-                  </p>
-            
-                </a>
-                <p class="product-item__price">
-                  <span class="product-item__price-current">6 000 ₽</span>
-                </p>
-                <a class="product-item__link" href="#">
-                  Добавить в корзину
-                  <div class="decor-btn__left"></div>
-                  <div class="decor-btn__right"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="catalog-page__item">
-            <div class="product-item">
-              <div class="product-item__img-box">
-                <div class="swiper product-item__slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-7.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-7.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-7.jpg" alt="product">
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <label class="product-item__label">
-                  <input class="product-item__like" type="checkbox">
-                  <span class="product-item__checkbox"></span>
-                </label>
-              </div>
-              <div class="product-item__content">
-                <a class="product-item__title-link" href="#">
-                  <p class="product-item__title">
-                    Foxxx Kitsune Mini Black Vintage RCA
-                  </p>
-            
-                </a>
-                <p class="product-item__price">
-                  <span class="product-item__price-current">6 000 ₽</span>
-                </p>
-                <a class="product-item__link" href="#">
-                  Добавить в корзину
-                  <div class="decor-btn__left"></div>
-                  <div class="decor-btn__right"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="catalog-page__item">
-            <div class="product-item">
-              <div class="product-item__img-box">
-                <div class="swiper product-item__slider">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-8.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-8.jpg" alt="product">
-                    </div>
-                    <div class="swiper-slide product-item__slide">
-                      <img class="product-item__slide-img" src="images/products/product-8.jpg" alt="product">
-                    </div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-                </div>
-                <label class="product-item__label">
-                  <input class="product-item__like" type="checkbox">
-                  <span class="product-item__checkbox"></span>
-                </label>
-              </div>
-              <div class="product-item__content">
-                <a class="product-item__title-link" href="#">
-                  <p class="product-item__title">
-                    Foxxx Kitsune Mini Black Vintage RCA
-                  </p>
-            
-                </a>
-                <p class="product-item__price">
-                  <span class="product-item__price-current">6 000 ₽</span>
-                </p>
-                <a class="product-item__link" href="#">
-                  Добавить в корзину
-                  <div class="decor-btn__left"></div>
-                  <div class="decor-btn__right"></div>
-                </a>
-              </div>
-            </div>
-          </div>
-     
-        </div>
-        <a class="catalog-page__link" href="#">
-          Показать ещё
-          <div class="decor-btn__left"></div>
-          <div class="decor-btn__right"></div>
-        </a>
       </div>
     </section>
+    <a class="assistant-popup" href=".assistant">
+      <img class="assistant-popup__img" src="images/assistants/1.jpg" alt="assistant">
+      <div class="assistant-popup__content">
+        <p class="assistant-popup__text">Ваш менеджер:</p>
+        <p class="assistant-popup__subtext">Валерия</p>
+        <span class="assistant-popup__online"></span>
+      </div>
+    </a>
   </main>
   <footer class="footer">
     <div class="container">

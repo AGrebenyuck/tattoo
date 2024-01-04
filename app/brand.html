@@ -397,151 +397,36 @@
             <a class="breadcrumbs__link" href="#">Главная</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Каталог</a>
+            <a class="breadcrumbs__link" href="#">Бренды</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Тату машинки</a>
+            <a class="breadcrumbs__link breadcrumbs__link--active" href="#">Kuro Sumi</a>
           </li>
         </ul>
       </div>
     </div>
-    <section class="catalog-page">
+    <section class="brand">
       <div class="container">
-        <h3 class="title catalog-page__title">Тату машинки</h3>
-        <div class="catalog-page__tabs">
-          <a class="catalog-page__tab" href="#">Для начинающих</a>
-          <a class="catalog-page__tab" href="#">От билдеров</a>
-          <a class="catalog-page__tab catalog-page__tab--active" href="#">Для профессионалов</a>
-          <a class="catalog-page__tab" href="#">Расходники</a>
+        <div class="brand__top">
+          <img class="brand__logo" src="images/brands/brand-big-1.png" alt="brand logo">
+          <h3 class="title brand__name">Kuro Sumi</h3>
         </div>
-        <div class="filters">
-          <a class="filters__btn" href=".filters__box">Фильтр</a>
-          <div class="filters__box">
-            <p class="filters__box-text">Фильтр</p>
-            <div class="filter-item">
-              <p class="filter-item__title">Цена</p>
-              <div class="filter-item__inputs">
-                <input class="filter-item__input" type="number" value="4500" min="0">
-                <p class="filter-item__line">–</p>
-                <input class="filter-item__input" type="number" value="38000" min="0"> 
-              </div>
-              <div class="decor-bottom"></div>
-            </div>
-            <div class="filter-item">
-              <p class="filter-item__title">Тип машинки</p>
-              <div class="dropdown">
-                <div class="select">
-                  <span class="select__text">Роторная</span>
-                </div>
-                <input class="dropdown__input-hidden" type="hidden" name="type">
-                <ul class="dropdown-menu">
-                  <li class="dropdown-menu__item dropdown-menu__item--all">
-                    <label class="dropdown-menu__label">
-                      <input class="dropdown-menu__input" type="checkbox">
-                      <div class="dropdown-menu__checkbox">
-                        <span></span>
-                        Выделить все
-                      </div>
-                    </label>
-                  <li class="dropdown-menu__item">
-                    <label class="dropdown-menu__label">
-                      <input class="dropdown-menu__input" type="checkbox">
-                      <div class="dropdown-menu__checkbox">
-                        <span></span>
-                        Роторная
-                      </div>       
-                    </label>
-                  <li class="dropdown-menu__item">
-                    <label class="dropdown-menu__label">
-                      <input class="dropdown-menu__input" type="checkbox">
-                      <div class="dropdown-menu__checkbox">
-                        <span></span>
-                        Индукционная
-                      </div>      
-                    </label>
-                  <li class="dropdown-menu__item">
-                    <label class="dropdown-menu__label">
-                      <input class="dropdown-menu__input" type="checkbox">
-                      <div class="dropdown-menu__checkbox">
-                        <span></span>
-                        Еще один вид
-                      </div>
-                    </label>
-                  <li class="dropdown-menu__item">
-                    <label class="dropdown-menu__label">
-                      <input class="dropdown-menu__input" type="checkbox">
-                      <div class="dropdown-menu__checkbox">
-                        <span></span>
-                        Другой тип машинки
-                      </div>                      
-                    </label>
-                  </li>
-                </ul>
-              </div>
-              <div class="decor-bottom"></div>
-            </div>
-            <div class="filter-item filter-item--availability">
-              <p class="filter-item__title">Только в наличии</p>
-              <label class="filter-item__label">
-                <input class="filter-item__input-checkbox" type="checkbox">
-                <div class="filter-item__checkbox">
-                  <span></span>
-                </div>
-              </label>
-              <div class="decor-bottom"></div>
-            </div>
-          </div>
-          <div data-da=".filters__box, 650, 2 " class="filter-item">
-            <p class="filter-item__title">Сортировка</p>
-            <div class="dropdown">
-              <div class="select">
-                <span class="select__text">Популярные</span>
-              </div>
-              <input class="dropdown__input-hidden" type="hidden" name="type">
-              <ul class="dropdown-menu">
-                <li class="dropdown-menu__item">
-                  <label class="dropdown-menu__label">
-                    <input class="dropdown-menu__input-radio" type="radio" name="radio" checked>
-                    <div class="dropdown-menu__radio">
-                      <span></span>
-                      Популярные
-                    </div>
-                  </label>
-                </li>
-                <li class="dropdown-menu__item">
-                  <label class="dropdown-menu__label">
-                    <input class="dropdown-menu__input-radio" type="radio" name="radio">
-                    <div class="dropdown-menu__radio">
-                      <span></span>
-                      По алфавиту
-                    </div>
-                  </label>
-                </li>
-                <li class="dropdown-menu__item">
-                  <label class="dropdown-menu__label">
-                    <input class="dropdown-menu__input-radio" type="radio" name="radio">
-                    <div class="dropdown-menu__radio">
-                      <span></span>
-                      Дешёвые
-                    </div>
-                  </label>
-                </li>
-                <li class="dropdown-menu__item">
-                  <label class="dropdown-menu__label">
-                    <input class="dropdown-menu__input-radio" type="radio" name="radio">
-                    <div class="dropdown-menu__radio">
-                      <span></span>
-                      Дорогие
-                    </div>
-                  </label>
-                </li>
-              </ul>
-            </div>
-            <div class="decor-bottom"></div>
-          </div>
+        <div class="brand__filters">
+          <button class="brand__filter-btn" data-filter=".sets">Тату наборы</button>
+          <button class="brand__filter-btn" data-filter=".machine">Тату машинки</button>
+          <button class="brand__filter-btn" data-filter=".blocks">Блоки питания</button>
+          <button class="brand__filter-btn" data-filter=".clip-cords">Клип-корды</button>
+          <button class="brand__filter-btn" data-filter=".cartridges">Картриджи</button>
+          <button class="brand__filter-btn" data-filter=".pedal">Педали</button>
+          <button class="brand__filter-btn" data-filter=".holders">Держатели</button>
+          <button class="brand__filter-btn" data-filter=".needle">Иглы</button>
+          <button class="brand__filter-btn" data-filter=".tips">Наконечники</button>
+          <button class="brand__filter-btn" data-filter=".accesories">Аксессуары</button>
+          <button class="brand__filter-btn" data-filter=".protect">Защита и уход</button>
+          <button class="brand__filter-btn" data-filter=".promo-sets">Промо наборы</button>
         </div>
-        <div class="catalog-page__items">
-          <div class="catalog-page__item">
+        <div class="brand__items">
+          <div class="brand__item mix sets">
             <div class="product-item">
               <div class="product-item__img-box">
                 <div class="swiper product-item__slider">
@@ -573,7 +458,7 @@
                   <p class="product-item__title">
                     Foxxx Kitsune Mini Black Vintage RCA
                   </p>
-            
+          
                 </a>
                 <p class="product-item__price">
                   <span class="product-item__price-current">6 000 ₽</span>
@@ -586,7 +471,7 @@
               </div>
             </div>
           </div>
-          <div class="catalog-page__item">
+          <div class="brand__item mix machine">
             <div class="product-item">
               <div class="product-item__img-box">
                 <div class="swiper product-item__slider">
@@ -618,7 +503,7 @@
                   <p class="product-item__title">
                     Foxxx Viper Fox Golden Vintage Lot #1 RCA
                   </p>
-            
+          
                 </a>
                 <p class="product-item__price">
                   <span class="product-item__price-current">8 730 ₽</span>
@@ -631,7 +516,7 @@
               </div>
             </div>
           </div>
-          <div class="catalog-page__item">
+          <div class="brand__item mix blocks">
             <div class="product-item">
               <div class="product-item__img-box">
                 <div class="swiper product-item__slider">
@@ -663,7 +548,7 @@
                   <p class="product-item__title">
                     Foxxx Kitsune Mini Vintage Aging With Gold RCA
                   </p>
-            
+          
                 </a>
                 <p class="product-item__price">
                   <span class="product-item__price-current">65 305 ₽</span>
@@ -677,7 +562,7 @@
               </div>
             </div>
           </div>
-          <div class="catalog-page__item">
+          <div class="brand__item mix clip-cords">
             <div class="product-item">
               <div class="product-item__img-box">
                 <div class="swiper product-item__slider">
@@ -704,7 +589,7 @@
                   <p class="product-item__title">
                     Skinductor Vertigo Long Stroke
                   </p>
-            
+          
                 </a>
                 <p class="product-item__price">
                   <span class="product-item__price-current">14 550 ₽</span>
@@ -717,7 +602,7 @@
               </div>
             </div>
           </div>
-          <div class="catalog-page__item">
+          <div class="brand__item mix cartridges">
             <div class="product-item">
               <div class="product-item__img-box">
                 <div class="swiper product-item__slider">
@@ -744,7 +629,7 @@
                   <p class="product-item__title">
                     CNC X-WE Wireless Tattoo Pen
                   </p>
-            
+          
                 </a>
                 <p class="product-item__price">
                   <span class="product-item__price-current">24 444 ₽</span>
@@ -757,7 +642,7 @@
               </div>
             </div>
           </div>
-          <div class="catalog-page__item">
+          <div class="brand__item mix pedal">
             <div class="product-item">
               <div class="product-item__img-box">
                 <div class="swiper product-item__slider">
@@ -784,7 +669,7 @@
                   <p class="product-item__title">
                     MT Vader Pen MT RCA Cord PRO 2000.135
                   </p>
-            
+          
                 </a>
                 <p class="product-item__price">
                   <span class="product-item__price-current">19 400 ₽</span>
@@ -797,7 +682,7 @@
               </div>
             </div>
           </div>
-          <div class="catalog-page__item">
+          <div class="brand__item mix holders">
             <div class="product-item">
               <div class="product-item__img-box">
                 <div class="swiper product-item__slider">
@@ -824,7 +709,7 @@
                   <p class="product-item__title">
                     Verge Direct 2.1 Black
                   </p>
-            
+          
                 </a>
                 <p class="product-item__price">
                   <span class="product-item__price-current">11 000 ₽</span>
@@ -837,7 +722,7 @@
               </div>
             </div>
           </div>
-          <div class="catalog-page__item">
+          <div class="brand__item mix needle">
             <div class="product-item">
               <div class="product-item__img-box">
                 <div class="swiper product-item__slider">
@@ -864,7 +749,7 @@
                   <p class="product-item__title">
                     Verge Direct 2 Black RCA
                   </p>
-            
+          
                 </a>
                 <p class="product-item__price">
                   <span class="product-item__price-current">10 900 ₽</span>
@@ -877,7 +762,7 @@
               </div>
             </div>
           </div>
-          <div class="catalog-page__item">
+          <div class="brand__item mix tips">
             <div class="product-item">
               <div class="product-item__img-box">
                 <div class="swiper product-item__slider">
@@ -904,7 +789,7 @@
                   <p class="product-item__title">
                     Foxxx Kitsune Mini Black Vintage RCA
                   </p>
-            
+          
                 </a>
                 <p class="product-item__price">
                   <span class="product-item__price-current">6 000 ₽</span>
@@ -917,7 +802,7 @@
               </div>
             </div>
           </div>
-          <div class="catalog-page__item">
+          <div class="brand__item mix accesories">
             <div class="product-item">
               <div class="product-item__img-box">
                 <div class="swiper product-item__slider">
@@ -944,7 +829,7 @@
                   <p class="product-item__title">
                     Foxxx Kitsune Mini Black Vintage RCA
                   </p>
-            
+          
                 </a>
                 <p class="product-item__price">
                   <span class="product-item__price-current">6 000 ₽</span>
@@ -957,7 +842,7 @@
               </div>
             </div>
           </div>
-          <div class="catalog-page__item">
+          <div class="brand__item mix protect">
             <div class="product-item">
               <div class="product-item__img-box">
                 <div class="swiper product-item__slider">
@@ -984,7 +869,7 @@
                   <p class="product-item__title">
                     Foxxx Kitsune Mini Black Vintage RCA
                   </p>
-            
+          
                 </a>
                 <p class="product-item__price">
                   <span class="product-item__price-current">6 000 ₽</span>
@@ -997,7 +882,7 @@
               </div>
             </div>
           </div>
-          <div class="catalog-page__item">
+          <div class="brand__item mix promo-sets">
             <div class="product-item">
               <div class="product-item__img-box">
                 <div class="swiper product-item__slider">
@@ -1024,7 +909,7 @@
                   <p class="product-item__title">
                     Foxxx Kitsune Mini Black Vintage RCA
                   </p>
-            
+          
                 </a>
                 <p class="product-item__price">
                   <span class="product-item__price-current">6 000 ₽</span>
@@ -1037,10 +922,9 @@
               </div>
             </div>
           </div>
-     
         </div>
-        <a class="catalog-page__link" href="#">
-          Показать ещё
+        <a class="brand__link" href="#">
+          Показать ещё
           <div class="decor-btn__left"></div>
           <div class="decor-btn__right"></div>
         </a>

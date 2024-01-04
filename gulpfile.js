@@ -13,7 +13,8 @@ function browsersync(){
     server: {
       baseDir: 'app/'
     },
-    notify: false
+    notify: false,
+    host: '192.168.1.109'
   })
 }
 
@@ -35,6 +36,11 @@ function scripts(){
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/swiper/swiper-bundle.js',
+    'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
+    'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
+    'node_modules/mixitup/dist/mixitup.js',
+    'node_modules/clamp-js/clamp.js',
+    'node_modules/jquery-collapser-master/dist/jquery.collapser.min.js',
     'app/js/main.js'
   ])
   .pipe(concat('main.min.js'))
